@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="canonical"
+            href="https://chatbot.placewith5s.com/" />
+        <!-- Primary Meta Tags -->
+        <title>Chatbot | Placewith5s</title>
+        <meta
+            name="title"
+            content="Chatbot | Placewith5s" />
+        <meta
+            name="description"
+            content="Chat with AI on Placewith5s using multiple models, with optional image upload support for text and visual prompts." />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://chatbot.placewith5s.com/" />
+        <meta
+            property="og:title"
+            content="Chatbot | Placewith5s" />
+        <meta
+            property="og:description"
+            content="Chat with AI on Placewith5s using multiple models, with optional image upload support for text and visual prompts." />
+        <!-- Twitter -->
+        <meta
+            property="twitter:card"
+            content="summary_large_image" />
+        <meta
+            property="twitter:url"
+            content="https://chatbot.placewith5s.com/" />
+        <meta
+            property="twitter:title"
+            content="Chatbot | Placewith5s" />
+        <meta
+            property="twitter:description"
+            content="Chat with AI on Placewith5s using multiple models, with optional image upload support for text and visual prompts." />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "url": "https://chatbot.placewith5s.com/",
+                "name": "Chatbot | Placewith5s",
+                "description": "Chat with AI on Placewith5s using multiple models, with optional image upload support for text and visual prompts.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Placewith5s",
+                    "url": "https://chatbot.placewith5s.com/",
+                }
+            }
+        </script>
+
+        <link rel="stylesheet" href="/css/.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+
+        <script
+            src="https://cdn.userway.org/widget.js"
+            data-account="CYiRL9XP3j"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Chatbot | Placewith5s</h1>
+        </header>
+
+        <main>
+            <div id="response-result"></div>
+
+            <div class="chat-options">
+                <select
+                    name="model-choices"
+                    id="model-choices">
+                    <option value="deepseek-4">
+                        Deepseek 4 Flash (no image support)
+                    </option>
+                    <option value="deepseek-v4-pro">
+                        Deepseek 4 Pro (no image support)
+                    </option>
+                    <option value="gemma-4">
+                        Gemma 4 (Google)
+                    </option>
+                    <option value="gpt-oss">
+                        GPT-oss (Open AI) (no image support)
+                    </option>
+                    <option value="ministral-3">
+                        Ministral 3
+                    </option>
+                    <option value="qwen-3-vl">
+                        Qwen 3 VL
+                    </option>
+                    <option value="qwen-3.5">
+                        Qwen 3.5
+                    </option>
+                </select>
+
+                <label for="image"
+                    >Add image (optional)</label
+                >
+                <input
+                    id="image"
+                    type="file"
+                    accept="image/*" />
+
+                <div class="chat-rows">
+                    <input
+                        id="msg"
+                        type="text"
+                        placeholder="Message..."
+                        required />
+                    <button id="send-btn" type="button">
+                        Send
+                    </button>
+                </div>
+            </div>
+
+            <p class="spaced-bottom" id="wait-msg"></p>
+
+            <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"></script>
+            <a
+                class="reddit-share-link"
+                href="https://www.reddit.com/submit?url=https://chatbot.placewith5s.com&utm_source=placewith5s"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Share on Reddit</a
+            >
+            <!-- twitter-share-button shouldn't be changed to twitter-share-link (possible third party usage) -->
+            <a
+                class="twitter-share-button"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/intent/tweet?url=https://chatbot.placewith5s.com/&utm_source=placewith5s"
+                >Share on Twitter</a
+            >
+        </main>
+
+        <footer>
+            <p class="copyright">
+                © 2026-<span id="year"></span>
+                Front-end source code is licensed under the
+                MIT license.
+                <span
+                    >&#8201;Website content, branding, and
+                    design are proprietary.</span
+                >
+                <span
+                    >&#8201;Third-party components are
+                    licensed under their respective
+                    licenses.</span
+                >
+            </p>
+        </footer>
+
+        <script src="/js/script.js" defer></script>
+        <script src="/js/footer-date.js" defer></script>
+        <script src="/js/.js" defer></script>
+        <script src="/js/-label.js" defer></script>
+    </body>
+</html>
